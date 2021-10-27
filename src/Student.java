@@ -19,16 +19,16 @@ public class Student {
 		return name;
 	}
 
-	public void setName(String name) {
+	/*public void setName(String name) {
 		this.name = name;
-	}
+	}*/				//영구적으로 바꿀 수 없음
 
 	public int getScore() {
 		return score;
 	}
 
 	public void setScore(int score) {
-		this.score = score;
+		if(score > 50) this.score = score;
 	}
 	
 	
